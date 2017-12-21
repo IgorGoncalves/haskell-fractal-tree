@@ -2,3 +2,4 @@
 fractal.cabal
 *~
 dist/
+.cabal-sandbox/
