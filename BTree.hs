@@ -18,6 +18,7 @@ toSortedList Nil = []
 toSortedList (Node x esq dir) = toSortedList esq ++ [x] ++ toSortedList dir
 
 
+
 nodeCount::BTree -> Int
 nodeCount Nil = 0
 nodeCount (Node x esq dir) = 1 + nodeCount esq + nodeCount dir
