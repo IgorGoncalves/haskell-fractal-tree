@@ -17,7 +17,7 @@ buildTree y (Node x esq dir) = Node (10-y) (buildTree (y-1) esq) (buildTree (y-1
 
 -- união dos pictures e formação de um contexto de pintura
 drawing :: Picture
-drawing = Pictures lines
+drawing = Pictures [ color green x | x <- lines]
         where            
             arvore = foldr buildTree Nil (reverse [1..10]) -- invocação e preenchimento da arvore modelo
             lines  = buildLinesTree arvore [(0,0),(0, 50)] (-30) -- cria as linhas com base na arvore modelo
@@ -51,4 +51,4 @@ rotateLine ang [(x1,y1), (x2,y2)]
 
 
 main :: IO ()
-main = display (InWindow "Nice Window" (800, 800) (10, 10)) white drawing
+main = display (InWindow "Nice Window" (800, 800) (10, 10)) black drawing

@@ -91,12 +91,12 @@
   (major1) == 1 && (major2) <  24 || \
   (major1) == 1 && (major2) == 24 && (minor) <= 0)
 
-/* tool pkg-config-1.3.9 */
-#define TOOL_VERSION_pkg_config "1.3.9"
+/* tool pkg-config-1.3.12 */
+#define TOOL_VERSION_pkg_config "1.3.12"
 #define MIN_TOOL_VERSION_pkg_config(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  3 || \
-  (major1) == 1 && (major2) == 3 && (minor) <= 9)
+  (major1) == 1 && (major2) == 3 && (minor) <= 12)
 
 /* tool strip-2.27 */
 #define TOOL_VERSION_strip "2.27"
