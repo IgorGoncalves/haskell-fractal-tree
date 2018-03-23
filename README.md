@@ -1,5 +1,7 @@
 # haskell-fractal-tree
 Desenho de arvore fractal utilizando haskell, cabal e glossLib
+![Imagem da arvore](https://github.com/IgorGoncalves/haskell-fractal-tree/blob/master/fractal-tree-haskell.png?raw=true)
+
 
 # Configurações iniciais
 
